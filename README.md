@@ -5,7 +5,7 @@ Overview
   1. Importing Data: To use the EDA toolkit, start by importing your dataset into a pandas DataFrame. Ensure that your dataset includes necessary columns, particularly headline,    publisher, and date.
   2. Class Initialization: Create an instance of the EDA_analysis class by passing your DataFrame. This will initialize the analysis toolkit with your data.
   3. Methods Overview
-    3.1. Descriptive Statistics
+  3.1. Descriptive Statistics
      - Method: descriptive_headline
      - Calculates the length of each article headline.
      - Returns descriptive statistics for these lengths along with the count of articles per publisher.
