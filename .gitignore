@@ -1,2 +1,5 @@
 .venv
 data/
+__pycache__/
+gensim/
+notebooks/sentimented_df.csv 
