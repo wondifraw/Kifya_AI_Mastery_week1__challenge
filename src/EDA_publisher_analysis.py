@@ -264,23 +264,6 @@ class EDA_publisher_analysis:
 
             # Display top publishers
             print("\nTop Publishers:\n", top_publishers)
-
-            # Optionally, analyze types of news reported (if a 'category' column exists)
-            if 'category' in self.data.columns:
-                self.data['publisher_category'] = self.data.groupby('publisher')['category'].transform(lambda x: x.mode()[0])
-                category_counts = self.data.groupby('publisher')['publisher_category'].value_counts().unstack().fillna(0)
-
-                # Plot the distribution of news types by publisher
-                category_counts.plot(kind='bar', stacked=True, figsize=(12, 6))
-                plt.title('Types of News Reported by Top Publishers')
-                plt.xlabel('Publisher')
-                plt.ylabel('Number of Articles')
-                plt.xticks(rotation=45)
-                plt.legend(title='News Category')
-                plt.grid(axis='y')
-                plt.show()
-            else:
-                print("No 'category' column found for analyzing news types.")
         except Exception as e:
             print(f"Error in analyze_publishers_contribution: {e}")
 
