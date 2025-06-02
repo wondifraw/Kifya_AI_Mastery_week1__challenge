@@ -1,6 +1,7 @@
 Overview
 task-1
-This project provides an exploratory data analysis (EDA) toolkit for analyzing articles from various publishers. It includes methods to visualize and summarize key aspects of the dataset, such as headline lengths, publication frequencies, and publisher contributions.
+- This project provides an exploratory data analysis (EDA) toolkit for analyzing articles from various publishers. 
+- It includes methods to visualize and summarize key aspects of the dataset, such as headline lengths, publication frequencies, and publisher contributions.
 - It includes methods to visualize and summarize key aspects of the dataset, such as headline lengths, publication frequencies, and publisher contributions.
 - Getting Started
   1. Importing Data: To use the EDA toolkit, start by importing your dataset into a pandas DataFrame. Ensure that your dataset includes necessary columns, particularly headline,    publisher, and date.
