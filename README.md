@@ -1,8 +1,6 @@
-## Week 1 Challenge - Quantitative & Time Series Analysis and Sentiment Analysis on News Data and Stock data
+### Week 1 Challenge - Quantitative & Time Series Analysis and Sentiment Analysis on News and Stock data
 
-## Table of Contents
-- [Week 1 Challenge - Quantitative \& Time Series Analysis and Sentiment Analysis on News Data and Stock data](#week-1-challenge---quantitative--time-series-analysis-and-sentiment-analysis-on-news-data-and-stock-data)
-- [Table of Contents](#table-of-contents)
+### Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -14,15 +12,10 @@
 - [Data Description](#data-description)
 - [Analysis Performed](#analysis-performed)
 - [Contribution Guidelines](#contribution-guidelines)
-    - [To contribute to this project, please follow these steps:](#to-contribute-to-this-project-please-follow-these-steps)
-  - [**Note:** Please ensure that your code follows the project's coding style and includes appropriate tests.](#note-please-ensure-that-your-code-follows-the-projects-coding-style-and-includes-appropriate-tests)
-    - [Please ensure that your code follows the project's coding style and includes appropriate tests.](#please-ensure-that-your-code-follows-the-projects-coding-style-and-includes-appropriate-tests)
 - [Continuous Integration](#continuous-integration)
 - [Future Work](#future-work)
 - [Contact](#contact)
-
 ---
-
 ## Project Overview
 
 This repository contains the implementation of quantitative analysis, time series analysis, and correlation analysis on news datasets using Python libraries such as PyNance, TaLib, and other relevant tools. The goal is to extract insights from news sentiment and examine its relationship with stock market movement.
@@ -98,17 +91,14 @@ This repository contains the implementation of quantitative analysis, time serie
 * Unexpected errors trigger clean exits without crashing the program.
 ---
 ## Contribution Guidelines
- #### To contribute to this project, please follow these steps:
+  **To contribute to this project, please follow these steps:**
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/new-feature`).
 3. Commit your changes (`git commit -m "Add feature X"`).
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Open a Pull Request for review.
-<<<<<<< HEAD
-   ### **Note:** Please ensure that your code follows the project's coding style and includes appropriate tests.
-=======
-   #### Please ensure that your code follows the project's coding style and includes appropriate tests.
+ * **Note:** Please ensure that your code follows the project's coding style and includes appropriate tests.
 ## Continuous Integration
   * GitHub Actions are set up to automatically run tests and linters on each commit and pull request.
   * This ensures code quality and prevents regressions.
