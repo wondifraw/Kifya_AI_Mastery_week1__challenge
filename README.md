@@ -16,6 +16,7 @@
 - [Contribution Guidelines](#contribution-guidelines)
     - [To contribute to this project, please follow these steps:](#to-contribute-to-this-project-please-follow-these-steps)
   - [**Note:** Please ensure that your code follows the project's coding style and includes appropriate tests.](#note-please-ensure-that-your-code-follows-the-projects-coding-style-and-includes-appropriate-tests)
+    - [Please ensure that your code follows the project's coding style and includes appropriate tests.](#please-ensure-that-your-code-follows-the-projects-coding-style-and-includes-appropriate-tests)
 - [Continuous Integration](#continuous-integration)
 - [Future Work](#future-work)
 - [Contact](#contact)
@@ -104,7 +105,10 @@ This repository contains the implementation of quantitative analysis, time serie
 3. Commit your changes (`git commit -m "Add feature X"`).
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Open a Pull Request for review.
+<<<<<<< HEAD
    ### **Note:** Please ensure that your code follows the project's coding style and includes appropriate tests.
+=======
+   #### Please ensure that your code follows the project's coding style and includes appropriate tests.
 ## Continuous Integration
   * GitHub Actions are set up to automatically run tests and linters on each commit and pull request.
   * This ensures code quality and prevents regressions.
