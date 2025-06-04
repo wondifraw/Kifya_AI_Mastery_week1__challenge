@@ -1,10 +1,16 @@
-name: Python CI
+name: Python CI/CD
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -13,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Use the desired Python version
+        python-version: '3.13.2'  
 
     - name: Install dependencies
       run: |
@@ -22,10 +28,13 @@ jobs:
 
     - name: Run tests
       run: |
-        # Adjust the command according to your test framework
-        pytest tests/
+        pytest tests/ --cov=src  # Run tests and collect coverage
 
     - name: Lint with Flake8
       run: |
         pip install flake8
         flake8 src/
+
+    - name: Notify on success
+      if: success()
+      run: echo "All checks passed!"
