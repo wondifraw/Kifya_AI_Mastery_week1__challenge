@@ -7,7 +7,6 @@
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Installation](#installation)
-  - [cd week1\_\_challenge](#cd-week1__challenge)
   - [Create and activate a virtual environment (optional but recommended):](#create-and-activate-a-virtual-environment-optional-but-recommended)
   - [Install the dependencies:](#install-the-dependencies)
   - [Usage](#usage)
@@ -54,12 +53,11 @@ This repository contains the implementation of quantitative analysis, time serie
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/wondifraw/week1__challenge.git
-   cd week1__challenge
+    ```bash
+         git clone https://github.com/wondifraw/week1__challenge.git
+        cd week1__challenge
 ---
 ## Create and activate a virtual environment (optional but recommended):
-    ```bash
          python3 -m venv venv
          source venv/bin/activate  # On Windows: venv\Scripts\activate
 ---
