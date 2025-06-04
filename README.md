@@ -1,21 +1,24 @@
-# Week 1 Challenge - Quantitative & Time Series Analysis on News Data
+## Week 1 Challenge - Quantitative & Time Series Analysis and Sentiment Analysis on News Data and Stock data
 
 ## Table of Contents
-- [Week 1 Challenge - Quantitative \& Time Series Analysis on News Data](#week-1-challenge---quantitative--time-series-analysis-on-news-data)
-  - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-  - [Installation](#installation)
-  - [Create and activate a virtual environment (optional but recommended):](#create-and-activate-a-virtual-environment-optional-but-recommended)
-  - [Install the dependencies:](#install-the-dependencies)
-  - [Usage](#usage)
-  - [Project Structure](#project-structure)
-  - [Data Description](#data-description)
-  - [Analysis Performed](#analysis-performed)
-  - [Contribution Guidelines](#contribution-guidelines)
-  - [Continuous Integration](#continuous-integration)
-  - [Contact](#contact)
+- [Week 1 Challenge - Quantitative \& Time Series Analysis and Sentiment Analysis on News Data and Stock data](#week-1-challenge---quantitative--time-series-analysis-and-sentiment-analysis-on-news-data-and-stock-data)
+- [Table of Contents](#table-of-contents)
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Create and activate a virtual environment (optional but recommended):](#create-and-activate-a-virtual-environment-optional-but-recommended)
+- [Install the dependencies:](#install-the-dependencies)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Data Description](#data-description)
+- [Analysis Performed](#analysis-performed)
+- [Contribution Guidelines](#contribution-guidelines)
+    - [To contribute to this project, please follow these steps:](#to-contribute-to-this-project-please-follow-these-steps)
+    - [Please ensure that your code follows the project's coding style and includes appropriate tests.](#please-ensure-that-your-code-follows-the-projects-coding-style-and-includes-appropriate-tests)
+- [Continuous Integration](#continuous-integration)
+- [Future Work](#future-work)
+- [Contact](#contact)
 
 ---
 
@@ -47,6 +50,8 @@ This repository contains the implementation of quantitative analysis, time serie
 - nltk / TextBlob (for sentiment analysis)  
 - Jupyter Notebook  
 - GitHub Actions (CI/CD)
+- pytest
+- flake8
 ---
 
 ## Installation
@@ -92,15 +97,22 @@ This repository contains the implementation of quantitative analysis, time serie
 * Unexpected errors trigger clean exits without crashing the program.
 ---
 ## Contribution Guidelines
- * Fork the repository and create your feature branch (git checkout -b feature/new-feature).
- * Commit your changes with descriptive messages (git commit -m "Add feature X").
- * Push your branch (git push origin feature/new-feature).
- * Open a Pull Request for review.
- * Ensure all tests pass and CI checks are successful before merging.
+ #### To contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m "Add feature X"`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a Pull Request for review.
+   #### Please ensure that your code follows the project's coding style and includes appropriate tests.
 ## Continuous Integration
   * GitHub Actions are set up to automatically run tests and linters on each commit and pull request.
   * This ensures code quality and prevents regressions.
   * Future plans include deployment automation and integration with cloud platforms.
+## Future Work
+- Implement additional machine learning models for predictive analysis.
+- Enhance data visualizations using interactive libraries.
+- Expand the dataset for more comprehensive analysis.
 ## Contact
    * Maintainer: Wondifraw
    * GitHub: https://github.com/wondifraw
