@@ -1,45 +1,107 @@
-Overview
-task-1
-- This project provides an exploratory data analysis (EDA) toolkit for analyzing articles from various publishers. 
-- It includes methods to visualize and summarize key aspects of the dataset, such as headline lengths, publication frequencies, and publisher contributions.
-- It includes methods to visualize and summarize key aspects of the dataset, such as headline lengths, publication frequencies, and publisher contributions.
-- Getting Started
-  1. Importing Data: To use the EDA toolkit, start by importing your dataset into a pandas DataFrame. Ensure that your dataset includes necessary columns, particularly headline,    publisher, and date.
-  2. Class Initialization: Create an instance of the EDA_analysis class by passing your DataFrame. This will initialize the analysis toolkit with your data.
-  3. Methods Overview
-  3.1. Descriptive Statistics
-     - Method: descriptive_headline
-     - Calculates the length of each article headline.
-     - Returns descriptive statistics for these lengths along with the count of articles per publisher.
-   3.2. Publisher Activity
-       - Method: descriptive_statistics
-       - Counts the number of articles published by each publisher.
-       - Visualizes the top 20 publishers in a bar chart for easy comparison.
-   3.3. Publication Frequency Analysis
-       - Method: analyze_publication_frequency
-       - Analyzes how frequently articles are published over time.
-       - Plots daily publication counts and identifies any significant spikes using a rolling average.
-  3.4. Publication Times Analysis
-      - Method: analyze_publication_times
-      - Examines the distribution of articles published at different hours of the day.
-      - Visualizes the results in a bar chart to identify peak publishing hours.
-  3.5. Time Series Analysis
-      - Method: time_series_analysis
-      - Provides a time series visualization of article publications to observe trends over time.
-  3.6. Publisher Analysis
-      - Method: publisher_analysis
-      - Analyzes publisher activity by counting articles per publisher.
-      - Extracts and visualizes the top domains contributing articles in a bar chart.
-  3.7. Email Domain Analysis
-      - Method: publisher_analysis_Enail
-      - Analyzes publishers and their contributions based on their email domains.
-1. Executing the Analysis
-   - To run the analysis, call the methods in the order that aligns with your analysis goals.
-   - For example:
-    1. Start with descriptive statistics to understand headline lengths and article counts.
-    2. Analyze publisher activity to identify the most active publishers.
-    3. Examine publication frequency to spot trends over time.
-    4. Investigate publication times to find peak hours for article releases.
-    5. Conduct a time series analysis for a comprehensive view of publication trends.
-    6. Perform publisher analysis to understand contributions from various domains.# week1_challenge
+# Week 1 Challenge - Quantitative & Time Series Analysis on News Data
 
+## Table of Contents
+- [Week 1 Challenge - Quantitative \& Time Series Analysis on News Data](#week-1-challenge---quantitative--time-series-analysis-on-news-data)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Create and activate a virtual environment (optional but recommended):](#create-and-activate-a-virtual-environment-optional-but-recommended)
+  - [Install the dependencies:](#install-the-dependencies)
+  - [Usage](#usage)
+  - [Project Structure](#project-structure)
+  - [Data Description](#data-description)
+  - [Analysis Performed](#analysis-performed)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Continuous Integration](#continuous-integration)
+  - [Contact](#contact)
+
+---
+
+## Project Overview
+
+This repository contains the implementation of quantitative analysis, time series analysis, and correlation analysis on news datasets using Python libraries such as PyNance, TaLib, and other relevant tools. The goal is to extract insights from news sentiment and examine its relationship with stock market movement.
+
+---
+
+## Features
+
+- Object-oriented, modular, and efficient codebase.
+- Quantitative analysis of financial and news data.
+- Time series analysis and visualization of news frequency.
+- Correlation analysis between news sentiment and stock movement.
+- Proactive error handling with informative messages.
+- Automated CI/CD pipeline for code quality checks.
+
+---
+
+## Technologies Used
+
+- Python 3.x  
+- Pandas  
+- NumPy  
+- Matplotlib / Seaborn  
+- TaLib  
+- PyNance  
+- nltk / TextBlob (for sentiment analysis)  
+- Jupyter Notebook  
+- GitHub Actions (CI/CD)
+---
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+         git clone https://github.com/wondifraw/week1__challenge.git
+        cd week1__challenge
+---
+## Create and activate a virtual environment (optional but recommended):
+         python3 -m venv venv
+         source venv/bin/activate  # On Windows: venv\Scripts\activate
+---
+## Install the dependencies:
+         pip install -r requirements.txt
+
+--- 
+## Usage
+1. Open the Jupyter Notebook to explore the analysis:
+2. Navigate to the notebook folder and open EDA_analysis_and_Topic_modelling ipynb.
+3. Follow the notebook cells to run quantitative analysis, time series analysis, and correlation studies.
+## Project Structure
+    ```bash
+        week1__challenge/
+        ├── data/                   # Raw and processed datasets
+        ├── notebooks/              # Jupyter notebooks for analysis
+        ├── src/                    # Source code (modular and reusable)
+        ├── tests/                  # Unit and integration tests
+        ├── .github/workflows/      # CI/CD workflows (GitHub Actions)
+        ├── requirements.txt        # Python dependencies
+        ├── README.md               # Project documentation
+        └── gitignore                 # Prevent Unnecessary Files from Being Tracked
+--- 
+## Data Description
+* The dataset consists of news headlines, publication timestamps, and stock price data.
+* Data preprocessing includes cleaning, normalization, and timestamp conversion.
+* Sentiment analysis is performed using nltk/TextBlob to classify news sentiment.
+---
+## Analysis Performed
+* The code includes try-except blocks to handle file I/O errors, data processing exceptions, and invalid inputs gracefully.
+* Informative error messages guide users to troubleshoot issues.
+* Unexpected errors trigger clean exits without crashing the program.
+---
+## Contribution Guidelines
+ * Fork the repository and create your feature branch (git checkout -b feature/new-feature).
+ * Commit your changes with descriptive messages (git commit -m "Add feature X").
+ * Push your branch (git push origin feature/new-feature).
+ * Open a Pull Request for review.
+ * Ensure all tests pass and CI checks are successful before merging.
+## Continuous Integration
+  * GitHub Actions are set up to automatically run tests and linters on each commit and pull request.
+  * This ensures code quality and prevents regressions.
+  * Future plans include deployment automation and integration with cloud platforms.
+## Contact
+   * Maintainer: Wondifraw
+   * GitHub: https://github.com/wondifraw
+   * Email: wondebdu@gmail.com
